@@ -20,7 +20,7 @@ RUN nvm install 16
 RUN corepack enable
 RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.10.31/install)"
+RUN sh -c "$(curl -sSfL https://release.solana.com/v1.14.3/install)"
 
 SHELL ["/bin/sh", "-c"]
 RUN cargo install --git https://github.com/project-serum/anchor avm --locked --force
