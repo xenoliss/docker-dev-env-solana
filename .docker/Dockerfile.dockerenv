@@ -15,7 +15,7 @@ RUN useradd -s /bin/bash -m developer && \
 USER developer
 
 SHELL ["/bin/bash", "--login", "-i", "-c"]
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN nvm install 16
 RUN corepack enable
 RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
